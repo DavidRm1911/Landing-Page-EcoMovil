@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/untitled",
-            "baseHref": "/Landing-Page/",
+            "baseHref": "/Landing-Page-EcoMovil/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
