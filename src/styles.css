@@ -1,7 +1,134 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* ── EcoMovil Design System — CSS variables ── */
+:root {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Roboto', sans-serif;
+
+  --green-50:  #f0fdf4;
+  --green-100: #dcfce7;
+  --green-200: #bbf7d0;
+  --green-300: #86efac;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --green-800: #166534;
+  --green-900: #14532d;
+  --emerald-50:  #ecfdf5;
+  --emerald-100: #d1fae5;
+  --emerald-200: #a7f3d0;
+  --emerald-400: #34d399;
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+  --emerald-700: #047857;
+  --emerald-800: #065f46;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-900: #111827;
+  --white: #ffffff;
+
+  --tier-bronze: #b45309;
+  --tier-silver: #94a3b8;
+  --tier-gold:   #d97706;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.10);
+  --shadow-xl: 0 20px 48px rgba(0,0,0,0.13);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html, body { height: 100%; margin: 0; }
+body { font-family: var(--font-sans); background: var(--white); -webkit-font-smoothing: antialiased; }
+
+/* ── Utility classes used across components ── */
+.eco-eyebrow {
+  display: inline-flex; align-items: center;
+  font-family: var(--font-sans); font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--green-700); background: var(--green-100);
+  padding: 6px 14px; border-radius: 9999px;
+}
+.eco-eyebrow-white {
+  display: inline-block; padding: 6px 14px; border-radius: 9999px;
+  background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
+  font-family: var(--font-sans); font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; color: white;
+}
+.eco-h1 {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(44px, 6vw, 72px); line-height: 1.02;
+  letter-spacing: -0.035em; color: var(--green-800);
+}
+.eco-h2 {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(30px, 3.5vw, 48px); line-height: 1.1;
+  letter-spacing: -0.025em; color: var(--green-800);
+}
+.eco-h3 {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: 22px; line-height: 1.2; color: var(--green-800);
+}
+.eco-lead {
+  font-family: var(--font-sans); font-size: 18px;
+  line-height: 1.6; color: var(--gray-600);
+}
+.eco-btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--green-600); color: white;
+  font-family: var(--font-sans); font-weight: 600; font-size: 15px;
+  padding: 14px 26px; border-radius: 12px; border: none; cursor: pointer;
+  box-shadow: 0 6px 14px -4px rgba(22,163,74,0.45);
+  transition: all 200ms var(--ease-out); text-decoration: none;
+}
+.eco-btn-primary:hover {
+  background: var(--green-700);
+  box-shadow: 0 10px 22px -6px rgba(22,163,74,0.5);
+  transform: translateY(-1px);
+}
+.eco-btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: white; color: var(--green-700);
+  font-family: var(--font-sans); font-weight: 600; font-size: 15px;
+  padding: 14px 26px; border-radius: 12px;
+  border: 1.5px solid var(--green-300); cursor: pointer;
+  transition: all 200ms var(--ease-out); text-decoration: none;
+}
+.eco-btn-outline:hover { background: var(--green-50); border-color: var(--green-600); transform: translateY(-1px); }
+.eco-btn-white {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: white; color: var(--green-700);
+  font-family: var(--font-sans); font-weight: 600; font-size: 15px;
+  padding: 14px 26px; border-radius: 12px; border: none; cursor: pointer;
+  transition: all 200ms var(--ease-out); text-decoration: none;
+}
+.eco-btn-white:hover { background: var(--green-50); transform: translateY(-1px); }
+.eco-blob {
+  position: absolute; border-radius: 9999px; pointer-events: none;
+}
+.eco-card {
+  background: white; border: 1px solid var(--gray-200);
+  border-radius: 24px; box-shadow: var(--shadow-sm);
+  transition: all 250ms var(--ease-out);
+}
+.eco-card:hover { box-shadow: var(--shadow-xl); transform: translateY(-4px); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.anim-fadeup   { animation: fadeUp 600ms var(--ease-out) both; }
+.anim-delay-1  { animation-delay: 80ms; }
+.anim-delay-2  { animation-delay: 160ms; }
+.anim-delay-3  { animation-delay: 240ms; }
+.anim-delay-4  { animation-delay: 320ms; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50%       { transform: translateY(-8px) rotate(2deg); }
+}
+.anim-float { animation: float 4s ease-in-out infinite; }

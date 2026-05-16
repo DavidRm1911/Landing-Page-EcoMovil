@@ -8,56 +8,96 @@
     "register": "Sign Up"
   },
   "about": {
+    "eyebrow": "Our Story",
     "title": "About Us",
     "story": "Our Story",
-    "showeare": "Ecomovil was born from a simple idea: make transportation more friendly with the environment, more affordable, and more sustainable. Founded by a group of college students in 2025, we've grown from a small project into a thriving community-driven marketplace.\n",
+    "showeare": "Ecomovil was born from a simple idea: make transportation more friendly with the environment, more affordable, and more sustainable. Founded by a group of students in 2025, we've grown from a small project into a thriving community-driven marketplace.",
     "ourmission": "Our Mission",
-    "whatareourmission": "We're on a mission to revolutionize mobility by connecting people who want to buy, sell, or rent bikes, rollerskates, and skateboards. Whether you're a student, a professional, a tourist, or just someone looking for a greener way to get around — Ecomovil is for you. Together we're building a more sustainable future.\n",
+    "whatareourmission": "We're on a mission to revolutionize mobility by connecting people who want to buy, sell, or rent bikes, rollerskates, and skateboards. Whether you're a student, a professional, a tourist, or just someone looking for a greener way to get around — Ecomovil is for you. Together we're building a more sustainable future.",
     "learn": "Learn more about us",
     "ourteam": "Our Team",
     "ourproduct": "Our Product"
   },
   "footer": {
+    "tagline": "Sustainable mobility for everyone. Buy, sell, or rent your eco-friendly vehicle today.",
     "title": "Ecomovil",
+    "colProduct": "Product",
+    "colCompany": "Company",
+    "colContact": "Contact",
+    "linkHowItWorks": "How it Works",
+    "linkWhoCanUse": "Who can use it",
+    "linkPlans": "Plans",
     "about": "About Us",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "rights": "2025 Ecomovil. All rights reserved.",
-    "mail": "mail: Ecomovil.gmail.com"
+    "rights": "© 2025 Ecomovil. All rights reserved.",
+    "mail": "Ecomovil@gmail.com",
+    "location": "Lima, Peru",
+    "madeWith": "Made with sustainable purpose"
   },
   "how-it-works": {
+    "eyebrow": "Step by Step",
     "title": "How it Works",
+    "subtitle": "In four simple steps, we connect those who have vehicles with those who need them.",
     "steps": {
       "listYourRide": {
         "title": "List Your Ride",
-        "description": "Easily list your bike, rollerskates, or skates for sale or rent."
+        "description": "Easily list your bike, rollerskates, or skateboards for sale or rent."
       },
       "connect": {
-        "title": "Connect",
-        "description": "Join our forum to discuss, share tips, and meet other riders."
+        "title": "Explore Options",
+        "description": "Browse and filter available vehicles near you with clear pricing."
+      },
+      "handoff": {
+        "title": "Agree & Book",
+        "description": "Contact the owner, negotiate terms, and book securely in minutes."
       },
       "earnBadges": {
-        "title": "Earn Badges",
-        "description": "Get recognized for your activity with exclusive profile badges."
+        "title": "Build Reputation",
+        "description": "Complete transactions and earn badges that boost your visibility."
       }
     }
   },
   "join": {
-    "title": "Join Ecomovil Today",
-    "journey": "Start your journey towards sustainable transportation.",
-    "register": "Sign Up"
+    "eyebrow": "Start Today",
+    "title": "Join the EcoMovil community",
+    "journey": "Thousands of people already buy, sell and rent eco-friendly vehicles. Be part of the movement and make your mobility count.",
+    "placeholder": "Your email address",
+    "register": "Create free account",
+    "disclaimer": "No credit card required. Cancel anytime.",
+    "cardLabel": "Eco marketplace",
+    "cardStat1Label": "Active users",
+    "cardStat2Label": "Cities",
+    "cardStat3Label": "Rating",
+    "badgeLabel": "ECO"
   },
   "main": {
+    "badge": "Sustainable mobility",
+    "line1": "Buy, sell",
+    "line2": "and rent",
+    "line3": "eco-friendly vehicles",
     "theme": "Pedal, Roll, Connect",
-    "subtitle": "Your marketplace for wheels and deals",
-    "journey": "Start Your Journey"
+    "subtitle": "The marketplace where people connect to share bikes, rollerskates, and skateboards. Accessible for everyone, built for the future.",
+    "howItWorks": "See how it works",
+    "journey": "Start Your Journey",
+    "trustLabel": "already joined",
+    "co2Label": "CO₂ saved this month",
+    "stat1": "5,000+ users",
+    "stat2": "12 cities",
+    "stat3": "24,000+ trips",
+    "stat4": "4.8★ rating"
   },
   "plans": {
+    "eyebrow": "Plans & Pricing",
     "choose": "Choose your plan",
     "chooseplan": "Choose Plan",
+    "subtitle": "Start free and scale when you need it. No contracts, no surprises.",
     "bronze": {
       "title": "Bronze",
-      "price": "Free/month then $1.99/month",
+      "price": "Free",
+      "after": "then $1.99/month",
+      "desc": "Perfect for getting started and exploring the platform.",
+      "cta": "Start for free",
       "features": {
         "publications": "2 publications per month",
         "assistance": "Basic assistance"
@@ -65,7 +105,10 @@
     },
     "silver": {
       "title": "Silver",
-      "price": "$5.99/month",
+      "price": "$5.99",
+      "after": "/ month",
+      "desc": "For regular publishers who want more visibility.",
+      "cta": "Choose Silver",
       "features": {
         "publications": "10 publications per month",
         "assistance": "Priority assistance",
@@ -74,7 +117,10 @@
     },
     "gold": {
       "title": "Gold",
-      "price": "$19.99/month",
+      "price": "$19.99",
+      "after": "/ month",
+      "desc": "For businesses and sellers with high publication volume.",
+      "cta": "Choose Gold",
       "features": {
         "publications": "Unlimited publications",
         "assistance": "24/7 assistance"
@@ -82,12 +128,23 @@
     }
   },
   "whocanuse": {
+    "eyebrow": "For Everyone",
+    "headline": "Who can use EcoMovil?",
+    "subheadline": "Whether you have a vehicle you don't use or you're looking for one — EcoMovil connects both sides of the market simply and safely.",
     "title": "Who can use Ecomovil?",
     "graduates": "Landlord / Owner",
-    "list": "Have a bike, rollerskates, or skates you're not using? List them to rent or sell and earn extra income. Open to anyone!",
+    "card1Title": "List and earn income",
+    "list": "Have a bike, rollerskates, or skateboard you're not using? List them to rent or sell and earn extra income. Open to anyone!",
+    "bullet1a": "Create your listing in minutes",
+    "bullet1b": "Set your price and availability",
+    "bullet1c": "Receive payments securely",
     "join": "I want to list my vehicle",
     "acquirer": "Renter / Buyer",
+    "card2Title": "Find your ideal vehicle",
     "list2": "Browse, rent, or buy vehicles from other users easily and safely. Whether you're a student, professional, or tourist — Ecomovil is for you!",
+    "bullet2a": "Search by city and vehicle type",
+    "bullet2b": "Compare prices and ratings",
+    "bullet2c": "Book in seconds",
     "join2": "I want to rent or buy"
   }
 }

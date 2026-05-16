@@ -1,23 +1,109 @@
-<section id="main-section" class="relative py-20 overflow-hidden bg-green-100">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-col md:flex-row items-center">
-      <div class="md:w-1/2 mb-10 md:mb-0">
-        <h1 class="text-4xl md:text-5xl font-bold text-green-800 mb-4">{{'main.theme' | translate}}</h1>
-        <p class="text-xl text-green-600 mb-6">{{ 'main.subtitle' | translate }}</p>
-        <button (click)="redirectToExternalPage()" class="bg-green-600 text-white hover:bg-green-700 rounded px-4 py-2">{{'main.journey' | translate}}</button>
-      </div>
-      <div class="md:w-1/2 relative">
-        <div class="absolute inset-0 bg-gradient-to-r from-green-300 to-emerald-300 rounded-full transform rotate-45"></div>
-        <img src="./a.jpg" alt="Students riding bikes" class="relative z-10 rounded-full mx-auto" />
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-4 shadow-lg">
-          <svg class="h-12 w-12 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13H5l7-8m0 0l7 8-7-8z" />
-          </svg>
+<!-- HERO -->
+<section id="main-section" class="relative overflow-hidden"
+         style="background: linear-gradient(180deg, var(--green-50) 0%, white 100%); padding: 88px 0 120px;">
+
+  <!-- Blobs -->
+  <div class="eco-blob" style="width: 460px; height: 460px; background: var(--green-200); right: -160px; top: -120px; opacity: 0.5;"></div>
+  <div class="eco-blob" style="width: 280px; height: 280px; background: var(--emerald-200); left: -100px; bottom: -60px; opacity: 0.4;"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: copy -->
+      <div class="anim-fadeup">
+        <!-- Badge -->
+        <div class="eco-eyebrow mb-7" style="gap: 8px;">
+          <span style="padding: 3px 9px; background: var(--green-600); color: white; border-radius: 999px; font-size: 11px; font-weight: 700;">NUEVO</span>
+          {{ 'main.badge' | translate }}
         </div>
+
+        <h1 class="eco-h1 mb-6">
+          {{ 'main.line1' | translate }},<br>
+          {{ 'main.line2' | translate }},<br>
+          <span style="background: linear-gradient(135deg, var(--green-600), var(--emerald-500)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">{{ 'main.line3' | translate }}.</span>
+        </h1>
+
+        <p class="eco-lead mb-9" style="max-width: 520px;">{{ 'main.subtitle' | translate }}</p>
+
+        <div class="flex flex-wrap gap-3 mb-10">
+          <button (click)="redirectToExternalPage()" class="eco-btn-primary">
+            {{ 'main.journey' | translate }} <i class="fa-solid fa-arrow-right" style="font-size: 12px;"></i>
+          </button>
+          <a routerLink="/how-it-works" class="eco-btn-outline">
+            <i class="fa-solid fa-play" style="font-size: 10px; color: var(--green-600);"></i>
+            {{ 'main.howItWorks' | translate }}
+          </a>
+        </div>
+
+        <!-- Trust row -->
+        <div class="flex items-center gap-8 flex-wrap pt-6" style="border-top: 1px solid var(--gray-200);">
+          <!-- Avatars -->
+          <div class="flex">
+            <div *ngFor="let a of avatars; let i = index"
+                 [style.marginLeft]="i === 0 ? '0' : '-10px'"
+                 [style.background]="a.color"
+                 style="width: 36px; height: 36px; border-radius: 999px; border: 2px solid white; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; font-size: 13px; color: var(--green-900); box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+              {{ a.letter }}
+            </div>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 13px; color: var(--gray-600); line-height: 1.4;">
+            <div style="display: flex; align-items: center; gap: 4px; color: var(--tier-gold);">
+              <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+              <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+              <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+              <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+              <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+              <span style="color: var(--gray-900); font-weight: 700; margin-left: 6px;">4.8</span>
+            </div>
+            <span><strong style="color: var(--gray-900);">+5,000</strong> {{ 'main.trustLabel' | translate }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: visual -->
+      <div class="relative hidden md:block anim-fadeup anim-delay-2" style="height: 540px;">
+        <!-- Halo -->
+        <div class="absolute" style="inset: 5%; background: linear-gradient(135deg, var(--green-300), var(--emerald-400)); border-radius: 9999px; filter: blur(2px); transform: rotate(8deg);"></div>
+        <!-- Photo -->
+        <div class="absolute overflow-hidden" style="inset: 8%; border-radius: 9999px; box-shadow: var(--shadow-xl);">
+          <img src="./happypeoplebike.jpg" alt="Personas en bici" class="w-full h-full object-cover">
+        </div>
+        <!-- Floating listing card -->
+        <div class="absolute anim-float" style="bottom: 28px; left: -16px; width: 230px; background: white; border-radius: 18px; box-shadow: var(--shadow-xl); overflow: hidden; transform: rotate(-4deg);">
+          <div style="height: 100px; background: linear-gradient(135deg, var(--green-50), var(--emerald-100)); display: flex; align-items: center; justify-content: center; position: relative; padding: 12px;">
+            <span style="position: absolute; top: 10px; left: 10px; background: white; color: var(--green-700); font-size: 10px; font-weight: 800; padding: 4px 8px; border-radius: 999px; letter-spacing: 0.04em;">EN ALQUILER</span>
+            <img src="./a.jpg" alt="" style="height: 72px; width: 72px; object-fit: cover; border-radius: 50%;">
+          </div>
+          <div style="padding: 14px;">
+            <div style="font-family: var(--font-display); font-weight: 700; font-size: 14px; color: var(--gray-900);">Superfly Jump 27.5"</div>
+            <div style="font-family: var(--font-sans); font-size: 11px; color: var(--gray-500); margin-top: 2px;">San Isidro · 4.9 <i class="fa-solid fa-star" style="font-size: 9px; color: var(--tier-gold);"></i></div>
+            <div style="font-family: var(--font-display); font-weight: 800; font-size: 18px; color: var(--green-700); margin-top: 6px;">S/ 15<span style="font-size: 11px; font-weight: 500; color: var(--gray-500);"> / día</span></div>
+          </div>
+        </div>
+        <!-- Floating stat -->
+        <div class="absolute" style="top: 32px; right: -8px; background: white; border-radius: 16px; box-shadow: var(--shadow-lg); padding: 12px 16px; display: flex; align-items: center; gap: 12px; transform: rotate(3deg);">
+          <div style="width: 38px; height: 38px; border-radius: 12px; background: var(--green-100); display: flex; align-items: center; justify-content: center; color: var(--green-700); font-size: 16px;">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <div>
+            <div style="font-family: var(--font-display); font-weight: 800; font-size: 18px; color: var(--gray-900); line-height: 1;">128 kg CO₂</div>
+            <div style="font-family: var(--font-sans); font-size: 11px; color: var(--gray-500); margin-top: 2px;">{{ 'main.co2Label' | translate }}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<section style="background: white; padding: 32px 0; border-top: 1px solid var(--gray-100); border-bottom: 1px solid var(--gray-100);">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div *ngFor="let s of stats; let i = index" class="text-center" [style.borderLeft]="i > 0 ? '1px solid var(--gray-200)' : 'none'">
+        <div style="font-family: var(--font-display); font-size: clamp(28px, 3vw, 40px); font-weight: 800; color: var(--green-700); line-height: 1; letter-spacing: -0.02em;">{{ s.value }}</div>
+        <div style="font-family: var(--font-sans); font-size: 12px; font-weight: 500; color: var(--gray-500); margin-top: 8px; text-transform: uppercase; letter-spacing: 0.08em;">{{ s.label | translate }}</div>
       </div>
     </div>
   </div>
-  <svg class="absolute bottom-0 left-0 w-full h-32 z-10" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <path fill="#ffffff" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-  </svg>
 </section>

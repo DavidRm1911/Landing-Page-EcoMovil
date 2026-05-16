@@ -8,56 +8,96 @@
     "register": "Regístrate"
   },
   "about": {
+    "eyebrow": "Nuestra Historia",
     "title": "Acerca de nosotros",
     "story": "Nuestra historia",
-    "showeare": "Ecomovil ha nacido de una idea simple: hacer el transporte más amigable con el medio ambiente, más asequible y más sostenible. Fundada por un grupo de estudiantes universitarios en 2025, hemos pasado de un pequeño proyecto a un próspero mercado impulsado por la comunidad.\n",
+    "showeare": "Ecomovil ha nacido de una idea simple: hacer el transporte más amigable con el medio ambiente, más asequible y más sostenible. Fundada por un grupo de estudiantes en 2025, hemos pasado de un pequeño proyecto a un próspero mercado impulsado por la comunidad.",
     "ourmission": "Nuestra misión",
-    "whatareourmission": "Estamos en la misión de revolucionar la movilidad conectando a personas que quieren comprar, vender o alquilar bicicletas, patines y patinetas. Ya seas estudiante, profesional, turista o simplemente alguien que quiere moverse de forma diferente, Ecomovil es para ti. Juntos estamos creando un futuro más sostenible.\n",
+    "whatareourmission": "Estamos en la misión de revolucionar la movilidad conectando a personas que quieren comprar, vender o alquilar bicicletas, patines y patinetas. Ya seas estudiante, profesional, turista o simplemente alguien que quiere moverse de forma diferente, Ecomovil es para ti. Juntos estamos creando un futuro más sostenible.",
     "learn": "Aprende más acerca de nosotros",
     "ourteam": "Nuestro equipo",
     "ourproduct": "Nuestro producto"
   },
   "footer": {
+    "tagline": "Movilidad sostenible para todos. Compra, vende o alquila tu vehículo ecológico hoy.",
     "title": "Ecomovil",
+    "colProduct": "Producto",
+    "colCompany": "Empresa",
+    "colContact": "Contacto",
+    "linkHowItWorks": "¿Cómo funciona?",
+    "linkWhoCanUse": "¿Quién puede usarlo?",
+    "linkPlans": "Planes",
     "about": "Nosotros",
     "privacy": "Políticas de privacidad",
     "terms": "Términos de servicio",
-    "rights": "2025 Ecomovil. Todos los derechos reservados",
-    "mail": "Correo: Ecomovil@gmail.com"
+    "rights": "© 2025 Ecomovil. Todos los derechos reservados.",
+    "mail": "Ecomovil@gmail.com",
+    "location": "Lima, Perú",
+    "madeWith": "Hecho con propósito sostenible"
   },
   "how-it-works": {
+    "eyebrow": "Paso a Paso",
     "title": "Cómo funciona",
+    "subtitle": "En cuatro pasos simples, conectamos a quienes tienen vehículos con quienes los necesitan.",
     "steps": {
       "listYourRide": {
         "title": "Publica tu vehículo",
         "description": "Lista fácilmente tu bicicleta, patines o monopatines para la venta o alquiler."
       },
       "connect": {
-        "title": "Conéctate",
-        "description": "Únete a nuestro foro para discutir, compartir consejos y conocer a otros ciclistas."
+        "title": "Explora opciones",
+        "description": "Busca y filtra vehículos disponibles cerca de ti con precios claros."
+      },
+      "handoff": {
+        "title": "Acuerda y reserva",
+        "description": "Contacta al propietario, negocia los términos y reserva de forma segura."
       },
       "earnBadges": {
-        "title": "Gana Insignias",
-        "description": "Obtén reconocimiento por tu actividad con insignias exclusivas de perfil."
+        "title": "Gana reputación",
+        "description": "Completa transacciones y acumula insignias que aumentan tu visibilidad."
       }
     }
   },
   "join": {
-    "title": "Únete a Ecomovil hoy",
-    "journey": "Comienza tu viaje hacia el transporte sostenible.",
-    "register": "Regístrate"
+    "eyebrow": "Empieza Hoy",
+    "title": "Únete a la comunidad EcoMovil",
+    "journey": "Miles de personas ya compran, venden y alquilan vehículos ecológicos. Sé parte del movimiento y haz que tu movilidad cuente.",
+    "placeholder": "Tu correo electrónico",
+    "register": "Crear cuenta gratis",
+    "disclaimer": "Sin tarjeta de crédito. Cancela cuando quieras.",
+    "cardLabel": "Mercado ecológico",
+    "cardStat1Label": "Usuarios activos",
+    "cardStat2Label": "Ciudades",
+    "cardStat3Label": "Calificación",
+    "badgeLabel": "ECO"
   },
   "main": {
+    "badge": "Movilidad sostenible",
+    "line1": "Compra, vende",
+    "line2": "y alquila",
+    "line3": "vehículos ecológicos",
     "theme": "Pedalea, Rueda, Conecta",
-    "subtitle": "Tu mercado para ruedas y ofertas",
-    "journey": "Comienza tu viaje"
+    "subtitle": "El mercado donde las personas se conectan para compartir bicicletas, patines y patinetas. Accesible para todos, pensado para el futuro.",
+    "howItWorks": "Ver cómo funciona",
+    "journey": "Comienza tu viaje",
+    "trustLabel": "ya se unieron",
+    "co2Label": "CO₂ ahorrado este mes",
+    "stat1": "5,000+ usuarios",
+    "stat2": "12 ciudades",
+    "stat3": "24,000+ viajes",
+    "stat4": "4.8★ calificación"
   },
   "plans": {
+    "eyebrow": "Planes y Precios",
     "choose": "Elige tu plan",
     "chooseplan": "Elige Plan",
+    "subtitle": "Empieza gratis y escala cuando lo necesites. Sin contratos, sin sorpresas.",
     "bronze": {
       "title": "Bronce",
-      "price": "Gratis/mes y luego $1.99/mes",
+      "price": "Gratis",
+      "after": "luego $1.99/mes",
+      "desc": "Ideal para comenzar a publicar y explorar la plataforma.",
+      "cta": "Empezar gratis",
       "features": {
         "publications": "2 publicaciones por mes",
         "assistance": "Asistencia básica"
@@ -65,7 +105,10 @@
     },
     "silver": {
       "title": "Plata",
-      "price": "$5.99/mes",
+      "price": "$5.99",
+      "after": "/ mes",
+      "desc": "Para quienes publican regularmente y quieren más visibilidad.",
+      "cta": "Elegir Plata",
       "features": {
         "publications": "10 publicaciones por mes",
         "assistance": "Asistencia prioritaria",
@@ -74,7 +117,10 @@
     },
     "gold": {
       "title": "Oro",
-      "price": "$19.99/mes",
+      "price": "$19.99",
+      "after": "/ mes",
+      "desc": "Para negocios y vendedores con alto volumen de publicaciones.",
+      "cta": "Elegir Oro",
       "features": {
         "publications": "Publicaciones ilimitadas",
         "assistance": "Asistencia 24/7"
@@ -82,12 +128,23 @@
     }
   },
   "whocanuse": {
+    "eyebrow": "Para Todo Público",
+    "headline": "¿Quién puede usar EcoMovil?",
+    "subheadline": "No importa si tienes un vehículo que no usas o si buscas uno — EcoMovil conecta a ambos lados del mercado de forma simple y segura.",
     "title": "¿Quién puede usar Ecomovil?",
     "graduates": "Arrendador / Propietario",
+    "card1Title": "Publica y genera ingresos",
     "list": "¿Tienes una bicicleta, patines o patineta que no usas? Publícalos para alquilar o vender y genera ingresos extra. ¡Abierto a cualquier persona!",
+    "bullet1a": "Crea tu anuncio en minutos",
+    "bullet1b": "Fija tu precio y disponibilidad",
+    "bullet1c": "Recibe pagos de forma segura",
     "join": "Quiero publicar mi vehículo",
     "acquirer": "Arrendatario / Comprador",
+    "card2Title": "Encuentra tu vehículo ideal",
     "list2": "Busca, alquila o compra vehículos de otros usuarios de forma fácil y segura. ¡Sin importar si eres estudiante, profesional o turista, Ecomovil es para ti!",
+    "bullet2a": "Busca por ciudad y tipo de vehículo",
+    "bullet2b": "Compara precios y calificaciones",
+    "bullet2c": "Reserva en segundos",
     "join2": "Quiero alquilar o comprar"
   }
 }

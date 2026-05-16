@@ -1,48 +1,49 @@
-<section id="header-section">
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm">
-    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-      <a class="flex items-center space-x-2" routerLink="#">
-        <img src="./appLogo.jpg" class="h-6 w-6 custom-icon">
+<header class="sticky top-0 z-50 transition-all duration-300"
+        style="background: rgba(255,255,255,0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--gray-200);">
+  <div class="container mx-auto px-6 py-3 flex items-center gap-6">
 
-        <span class="text-xl font-bold text-green-600">EcoMovil</span>
-      </a>
-      <nav class="hidden md:flex space-x-6">
-        <a routerLink="/how-it-works" routerLinkActive="active" fragment="how-it-works" class="text-sm font-medium hover:text-green-600 transition-colors">{{'header.router1'|translate}}</a>
-        <a routerLink="/who" routerLinkActive="active" fragment="who" class="text-sm font-medium hover:text-green-600 transition-colors">{{'header.router2' | translate}}</a>
-        <a routerLink="/plans" routerLinkActive="active" fragment="plans" class="text-sm font-medium hover:text-green-600 transition-colors">{{'header.router3' | translate}}</a>
-        <a routerLink="/about" routerLinkActive="active" fragment="about" class="text-sm font-medium hover:text-green-600 transition-colors">{{'header.router4' | translate}}</a>
-        <a routerLink="/join" routerLinkActive="active" fragment="join" class="text-sm font-medium hover:text-green-600 transition-colors">{{'header.router5' | translate}}</a>
-      </nav>
-      <button (click)="redirectToExternalPage()" class="bg-green-600 text-white hover:bg-green-700 rounded px-4 py-2">{{ 'header.register' | translate }}</button>
-      <app-language-switcher/>
+    <!-- Logo -->
+    <a routerLink="/" class="flex items-center gap-2 shrink-0">
+      <img src="./appLogo.jpg" alt="EcoMovil" class="h-9 w-9 rounded-lg object-cover">
+      <span style="font-family: var(--font-display); font-weight: 800; font-size: 22px; letter-spacing: -0.02em; color: var(--green-600);">EcoMovil</span>
+    </a>
 
-    </div>
-  </header>
-</section>
+    <!-- Nav -->
+    <nav class="hidden md:flex items-center gap-7 ml-4">
+      <a routerLink="/how-it-works" routerLinkActive="active"
+         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms;"
+         class="hover:text-green-600">{{ 'header.router1' | translate }}</a>
+      <a routerLink="/who" routerLinkActive="active"
+         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms;"
+         class="hover:text-green-600">{{ 'header.router2' | translate }}</a>
+      <a routerLink="/plans" routerLinkActive="active"
+         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms;"
+         class="hover:text-green-600">{{ 'header.router3' | translate }}</a>
+      <a routerLink="/about" routerLinkActive="active"
+         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms;"
+         class="hover:text-green-600">{{ 'header.router4' | translate }}</a>
+      <a routerLink="/join" routerLinkActive="active"
+         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms;"
+         class="hover:text-green-600">{{ 'header.router5' | translate }}</a>
+    </nav>
+
+    <div class="flex-1"></div>
+
+    <!-- Language switcher -->
+    <app-language-switcher/>
+
+    <!-- CTA -->
+    <button (click)="redirectToExternalPage()" class="eco-btn-primary" style="font-size: 14px; padding: 10px 18px;">
+      {{ 'header.register' | translate }} <i class="fa-solid fa-arrow-right" style="font-size: 11px;"></i>
+    </button>
+  </div>
+</header>
 
 <app-main></app-main>
 
-<section id="how-it-works">
-  <app-how-it-works></app-how-it-works>
-</section>
-
-<section id="who">
-  <app-whocanuse></app-whocanuse>
-</section>
-
-<section id="plans">
-  <app-plans></app-plans>
-</section>
-
-<section id="about">
-  <app-about></app-about>
-</section>
-
-<section id="join">
-  <app-join></app-join>
-</section>
-
+<section id="how-it-works"><app-how-it-works></app-how-it-works></section>
+<section id="who"><app-whocanuse></app-whocanuse></section>
+<section id="plans"><app-plans></app-plans></section>
+<section id="about"><app-about></app-about></section>
+<section id="join"><app-join></app-join></section>
 <app-footer></app-footer>
-
-
-
