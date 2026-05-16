@@ -55,29 +55,29 @@
   "plans": {
     "choose": "Choose your plan",
     "chooseplan": "Choose Plan",
-    "freshman": {
-      "title": "Freshman",
+    "bronze": {
+      "title": "Bronze",
       "price": "Free/month then $1.99/month",
       "features": {
-        "publications": "Allows 2 publications per month",
+        "publications": "2 publications per month",
         "assistance": "Basic assistance"
       }
     },
-    "undergraduate": {
-      "title": "Undergraduate",
+    "silver": {
+      "title": "Silver",
       "price": "$5.99/month",
       "features": {
-        "publications": "Allows 10 publications per month",
-        "assistance": "Prior assistance",
+        "publications": "10 publications per month",
+        "assistance": "Priority assistance",
         "featuredPublications": "Featured publications"
       }
     },
-    "graduate": {
-      "title": "Graduate",
+    "gold": {
+      "title": "Gold",
       "price": "$19.99/month",
       "features": {
-        "publications": "Ilimited publications",
-        "assistance": "Assistance 24/7"
+        "publications": "Unlimited publications",
+        "assistance": "24/7 assistance"
       }
     }
   },

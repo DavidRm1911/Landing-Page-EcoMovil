@@ -55,25 +55,25 @@
   "plans": {
     "choose": "Elige tu plan",
     "chooseplan": "Elige Plan",
-    "freshman": {
-      "title": "Cachimbo",
+    "bronze": {
+      "title": "Bronce",
       "price": "Gratis/mes y luego $1.99/mes",
       "features": {
-        "publications": "Permite 2 publicaciones por mes",
+        "publications": "2 publicaciones por mes",
         "assistance": "Asistencia básica"
       }
     },
-    "undergraduate": {
-      "title": "Universitario",
+    "silver": {
+      "title": "Plata",
       "price": "$5.99/mes",
       "features": {
-        "publications": "Permite 10 publicaciones por mes",
+        "publications": "10 publicaciones por mes",
         "assistance": "Asistencia prioritaria",
         "featuredPublications": "Publicaciones destacadas"
       }
     },
-    "graduate": {
-      "title": "Graduado",
+    "gold": {
+      "title": "Oro",
       "price": "$19.99/mes",
       "features": {
         "publications": "Publicaciones ilimitadas",
