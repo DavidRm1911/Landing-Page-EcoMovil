@@ -15,9 +15,9 @@ import {TranslateModule} from "@ngx-translate/core";
 })
 export class WhocanuseComponent {
   redirectToExternalPage1() {
-    window.location.href = '  https://happy-tree-09edbd910.5.azurestaticapps.net/registerUniversity';
+    window.location.href = 'https://main.d6rnq0h4jt472.amplifyapp.com/login';
   }
   redirectToExternalPage2() {
-    window.location.href = '  https://happy-tree-09edbd910.5.azurestaticapps.net/registerAcquirer';
+    window.location.href = 'https://main.d6rnq0h4jt472.amplifyapp.com/login';
   }
 }

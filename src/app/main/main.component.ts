@@ -12,6 +12,6 @@ import {TranslateModule} from "@ngx-translate/core";
 })
 export class MainComponent {
   redirectToExternalPage(){
-    window.location.href = 'https://happy-tree-09edbd910.5.azurestaticapps.net';
+    window.location.href = 'https://main.d6rnq0h4jt472.amplifyapp.com/login';
   }
 }

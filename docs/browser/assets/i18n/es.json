@@ -42,11 +42,11 @@
   },
   "whocanuse": {
     "title": "Quien puede usar Ecomovil?",
-    "graduates": "Universitarios",
-    "list": "Lista tus bicicletas, patines o patinetas para la venta o alquiler. ¡Gana ingresos extra!.",
-    "join": "Unete como Universitario",
-    "acquirer": "Adquiriente",
-    "list2": "Busca y compra o alquila vehículos de propietarios estudiantes. Encuentra grandes ofertas en transporte universitario.",
-    "join2": "Unete como Adquiriente"
+    "graduates": "Vendedor / Arrendador",
+    "list": "Publica tus bicicletas, patines o patinetas para la venta o alquiler. ¡Abierto a todo público!",
+    "join": "Comienza a vender o alquilar",
+    "acquirer": "Comprador / Arrendatario",
+    "list2": "Busca y compra o alquila vehículos de otros usuarios. ¡Disponible para cualquier persona!",
+    "join2": "Comienza a buscar vehículos"
   }
 }

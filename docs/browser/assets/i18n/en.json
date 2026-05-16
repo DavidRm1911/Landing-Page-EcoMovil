@@ -42,11 +42,11 @@
   },
   "whocanuse": {
     "title": "Who can use Ecomovil?",
-    "graduates": "Undergraduates",
-    "list": "List your bikes, rollerskates, or skates for sale or rent. Earn extra income!.",
-    "join": "Join as a UnderGraduate",
-    "acquirer": "Acquirer",
-    "list2": "Browse and buy or rent vehicles from student owners. Find great deals on campus transportation.",
-    "join2": "Join as a Acquirer"
+    "graduates": "Seller / Landlord",
+    "list": "List your bikes, rollerskates, or skates for sale or rent. Open to everyone!",
+    "join": "Start selling or renting",
+    "acquirer": "Buyer / Renter",
+    "list2": "Browse and buy or rent vehicles from other users. Available to anyone!",
+    "join2": "Start looking for vehicles"
   }
 }
