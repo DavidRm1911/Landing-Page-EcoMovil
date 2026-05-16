@@ -10,20 +10,20 @@
 
     <!-- Nav -->
     <nav class="hidden md:flex items-center gap-7 ml-4">
-      <a routerLink="/how-it-works" routerLinkActive="active"
-         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms;"
+      <a (click)="scrollTo('how-section')"
+         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms; cursor: pointer;"
          class="hover:text-green-600">{{ 'header.router1' | translate }}</a>
-      <a routerLink="/who" routerLinkActive="active"
-         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms;"
+      <a (click)="scrollTo('who-section')"
+         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms; cursor: pointer;"
          class="hover:text-green-600">{{ 'header.router2' | translate }}</a>
-      <a routerLink="/plans" routerLinkActive="active"
-         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms;"
+      <a (click)="scrollTo('plans-section')"
+         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms; cursor: pointer;"
          class="hover:text-green-600">{{ 'header.router3' | translate }}</a>
-      <a routerLink="/about" routerLinkActive="active"
-         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms;"
+      <a (click)="scrollTo('about-section')"
+         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms; cursor: pointer;"
          class="hover:text-green-600">{{ 'header.router4' | translate }}</a>
-      <a routerLink="/join" routerLinkActive="active"
-         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms;"
+      <a (click)="scrollTo('join-section')"
+         style="font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: color 150ms; cursor: pointer;"
          class="hover:text-green-600">{{ 'header.router5' | translate }}</a>
     </nav>
 
@@ -38,12 +38,3 @@
     </button>
   </div>
 </header>
-
-<app-main></app-main>
-
-<section id="how-it-works"><app-how-it-works></app-how-it-works></section>
-<section id="who"><app-whocanuse></app-whocanuse></section>
-<section id="plans"><app-plans></app-plans></section>
-<section id="about"><app-about></app-about></section>
-<section id="join"><app-join></app-join></section>
-<app-footer></app-footer>
