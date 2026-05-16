@@ -12,7 +12,7 @@
     "story": "Nuestra historia",
     "showeare": "Ecomovil ha nacido de una idea simple: hacer el transporte más amigable con el medio ambiente, más asequible y más sostenible. Fundada por un grupo de estudiantes universitarios en 2025, hemos pasado de un pequeño proyecto a un próspero mercado impulsado por la comunidad.\n",
     "ourmission": "Nuestra misión",
-    "whatareourmission": "Estamos en la misión de revolucionar la movilidad conectando a los estudiantes que quieren comprar, vender o alquilar bicicletas, patines y patinetas, a todo tipo de personas. Incluso si solo eres un turista, puedes ser parte de nuestro proyecto. No solo estamos ahorrando dinero a los estudiantes, estamos creando un futuro más sostenible.\n",
+    "whatareourmission": "Estamos en la misión de revolucionar la movilidad conectando a personas que quieren comprar, vender o alquilar bicicletas, patines y patinetas. Ya seas estudiante, profesional, turista o simplemente alguien que quiere moverse de forma diferente, Ecomovil es para ti. Juntos estamos creando un futuro más sostenible.\n",
     "learn": "Aprende más acerca de nosotros",
     "ourteam": "Nuestro equipo",
     "ourproduct": "Nuestro producto"
@@ -83,11 +83,11 @@
   },
   "whocanuse": {
     "title": "¿Quién puede usar Ecomovil?",
-    "graduates": "Universitarios",
-    "list": "Lista tus bicicletas, patines o patinetas para la venta o alquiler. ¡Gana ingresos extra!",
-    "join": "Únete como Universitario",
-    "acquirer": "Adquiriente",
-    "list2": "Busca y compra o alquila vehículos de propietarios estudiantes. Encuentra grandes ofertas en transporte universitario.",
-    "join2": "Únete como Adquiriente"
+    "graduates": "Arrendador / Propietario",
+    "list": "¿Tienes una bicicleta, patines o patineta que no usas? Publícalos para alquilar o vender y genera ingresos extra. ¡Abierto a cualquier persona!",
+    "join": "Quiero publicar mi vehículo",
+    "acquirer": "Arrendatario / Comprador",
+    "list2": "Busca, alquila o compra vehículos de otros usuarios de forma fácil y segura. ¡Sin importar si eres estudiante, profesional o turista, Ecomovil es para ti!",
+    "join2": "Quiero alquilar o comprar"
   }
 }

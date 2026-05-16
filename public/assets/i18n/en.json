@@ -12,7 +12,7 @@
     "story": "Our Story",
     "showeare": "Ecomovil was born from a simple idea: make transportation more friendly with the environment, more affordable, and more sustainable. Founded by a group of college students in 2025, we've grown from a small project into a thriving community-driven marketplace.\n",
     "ourmission": "Our Mission",
-    "whatareourmission": "We're on a mission to revolutionize mobility by connecting students who want to buy, sell, or rent bikes, rollerskates, and skates, to all kind of people even if you are just a tourist you can be part of our project. we're not just saving students money – we're creating a more sustainable future.\n",
+    "whatareourmission": "We're on a mission to revolutionize mobility by connecting people who want to buy, sell, or rent bikes, rollerskates, and skateboards. Whether you're a student, a professional, a tourist, or just someone looking for a greener way to get around — Ecomovil is for you. Together we're building a more sustainable future.\n",
     "learn": "Learn more about us",
     "ourteam": "Our Team",
     "ourproduct": "Our Product"
@@ -83,11 +83,11 @@
   },
   "whocanuse": {
     "title": "Who can use Ecomovil?",
-    "graduates": "Undergraduates",
-    "list": "List your bikes, rollerskates, or skates for sale or rent. Earn extra income!.",
-    "join": "Join as a UnderGraduate",
-    "acquirer": "Acquirer",
-    "list2": "Browse and buy or rent vehicles from student owners. Find great deals on campus transportation.",
-    "join2": "Join as a Acquirer"
+    "graduates": "Landlord / Owner",
+    "list": "Have a bike, rollerskates, or skates you're not using? List them to rent or sell and earn extra income. Open to anyone!",
+    "join": "I want to list my vehicle",
+    "acquirer": "Renter / Buyer",
+    "list2": "Browse, rent, or buy vehicles from other users easily and safely. Whether you're a student, professional, or tourist — Ecomovil is for you!",
+    "join2": "I want to rent or buy"
   }
 }
