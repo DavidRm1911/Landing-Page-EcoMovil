@@ -85,7 +85,9 @@
     "stat1": "5,000+ users",
     "stat2": "12 cities",
     "stat3": "24,000+ trips",
-    "stat4": "4.8★ rating"
+    "stat4": "4.8★ rating",
+    "publishLabel": "to list a vehicle",
+    "reviewsLabel": "1,234 reviews"
   },
   "plans": {
     "eyebrow": "Plans & Pricing",

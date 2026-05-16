@@ -60,36 +60,89 @@
         </div>
       </div>
 
-      <!-- Right: visual -->
-      <div class="relative hidden md:block anim-fadeup anim-delay-2" style="height: 540px;">
-        <!-- Halo -->
-        <div class="absolute" style="inset: 5%; background: linear-gradient(135deg, var(--green-300), var(--emerald-400)); border-radius: 9999px; filter: blur(2px); transform: rotate(8deg);"></div>
-        <!-- Photo -->
-        <div class="absolute overflow-hidden" style="inset: 8%; border-radius: 9999px; box-shadow: var(--shadow-xl);">
-          <img src="./happypeoplebike.jpg" alt="Personas en bici" class="w-full h-full object-cover">
-        </div>
-        <!-- Floating listing card -->
-        <div class="absolute anim-float" style="bottom: 28px; left: -16px; width: 230px; background: white; border-radius: 18px; box-shadow: var(--shadow-xl); overflow: hidden; transform: rotate(-4deg);">
-          <div style="height: 100px; background: linear-gradient(135deg, var(--green-50), var(--emerald-100)); display: flex; align-items: center; justify-content: center; position: relative; padding: 12px;">
-            <span style="position: absolute; top: 10px; left: 10px; background: white; color: var(--green-700); font-size: 10px; font-weight: 800; padding: 4px 8px; border-radius: 999px; letter-spacing: 0.04em;">EN ALQUILER</span>
-            <img src="./a.jpg" alt="" style="height: 72px; width: 72px; object-fit: cover; border-radius: 50%;">
+      <!-- Right: Phone mockup -->
+      <div class="relative hidden md:flex anim-fadeup anim-delay-2" style="height: 580px; justify-content: center; align-items: center;">
+
+        <!-- Phone frame -->
+        <div style="width: 280px; height: 560px; background: var(--gray-900); border-radius: 44px; padding: 8px; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.45); transform: rotate(-4deg); position: relative; flex-shrink: 0;">
+          <div style="width: 100%; height: 100%; background: white; border-radius: 36px; overflow: hidden; position: relative;">
+            <!-- Notch -->
+            <div style="position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 90px; height: 24px; background: var(--gray-900); border-radius: 999px; z-index: 2;"></div>
+            <!-- App screen -->
+            <div style="padding: 44px 16px 16px; height: 100%; background: var(--green-50); box-sizing: border-box; overflow: hidden;">
+              <!-- Search bar -->
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; background: white; padding: 10px 14px; border-radius: 999px; box-shadow: 0 1px 4px rgba(0,0,0,0.08);">
+                <i class="fa-solid fa-magnifying-glass" style="color: var(--gray-400); font-size: 12px;"></i>
+                <span style="font-family: var(--font-sans); font-size: 12px; color: var(--gray-500);">Bicicleta cerca de mí…</span>
+              </div>
+              <!-- Filter chips -->
+              <div style="display: flex; gap: 6px; margin-bottom: 14px; overflow: hidden;">
+                <span style="padding: 5px 11px; border-radius: 999px; background: var(--green-600); color: white; font-family: var(--font-sans); font-size: 10px; font-weight: 600; white-space: nowrap; flex-shrink: 0;">Todos</span>
+                <span style="padding: 5px 11px; border-radius: 999px; background: white; color: var(--gray-700); font-family: var(--font-sans); font-size: 10px; font-weight: 600; white-space: nowrap; flex-shrink: 0;">Bicis</span>
+                <span style="padding: 5px 11px; border-radius: 999px; background: white; color: var(--gray-700); font-family: var(--font-sans); font-size: 10px; font-weight: 600; white-space: nowrap; flex-shrink: 0;">Patines</span>
+                <span style="padding: 5px 11px; border-radius: 999px; background: white; color: var(--gray-700); font-family: var(--font-sans); font-size: 10px; font-weight: 600; white-space: nowrap; flex-shrink: 0;">Patinetas</span>
+              </div>
+              <!-- Listing cards -->
+              <div style="background: white; border-radius: 14px; padding: 10px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                <div style="width: 56px; height: 48px; border-radius: 10px; background: linear-gradient(135deg, var(--green-100), var(--emerald-100)); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fa-solid fa-person-biking" style="color: var(--green-700); font-size: 20px;"></i>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="font-family: var(--font-display); font-size: 11px; font-weight: 700; color: var(--gray-900);">Superfly 27.5"</div>
+                  <div style="font-family: var(--font-sans); font-size: 9px; color: var(--gray-500); margin-top: 1px;">San Isidro · 4.9 ★</div>
+                </div>
+                <div style="font-family: var(--font-display); font-weight: 800; font-size: 13px; color: var(--green-700);">S/ 15</div>
+              </div>
+              <div style="background: white; border-radius: 14px; padding: 10px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                <div style="width: 56px; height: 48px; border-radius: 10px; background: linear-gradient(135deg, var(--green-100), var(--emerald-100)); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fa-solid fa-shoe-prints" style="color: var(--green-700); font-size: 20px;"></i>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="font-family: var(--font-display); font-size: 11px; font-weight: 700; color: var(--gray-900);">Patines Roces M12</div>
+                  <div style="font-family: var(--font-sans); font-size: 9px; color: var(--gray-500); margin-top: 1px;">Miraflores · 4.8 ★</div>
+                </div>
+                <div style="font-family: var(--font-display); font-weight: 800; font-size: 13px; color: var(--green-700);">S/ 240</div>
+              </div>
+              <div style="background: white; border-radius: 14px; padding: 10px; display: flex; align-items: center; gap: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                <div style="width: 56px; height: 48px; border-radius: 10px; background: linear-gradient(135deg, var(--green-100), var(--emerald-100)); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fa-solid fa-snowboarding" style="color: var(--green-700); font-size: 20px;"></i>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="font-family: var(--font-display); font-size: 11px; font-weight: 700; color: var(--gray-900);">Longboard 41"</div>
+                  <div style="font-family: var(--font-sans); font-size: 9px; color: var(--gray-500); margin-top: 1px;">Barranco · 4.7 ★</div>
+                </div>
+                <div style="font-family: var(--font-display); font-weight: 800; font-size: 13px; color: var(--green-700);">S/ 8</div>
+              </div>
+            </div>
           </div>
-          <div style="padding: 14px;">
-            <div style="font-family: var(--font-display); font-weight: 700; font-size: 14px; color: var(--gray-900);">Superfly Jump 27.5"</div>
-            <div style="font-family: var(--font-sans); font-size: 11px; color: var(--gray-500); margin-top: 2px;">San Isidro · 4.9 <i class="fa-solid fa-star" style="font-size: 9px; color: var(--tier-gold);"></i></div>
-            <div style="font-family: var(--font-display); font-weight: 800; font-size: 18px; color: var(--green-700); margin-top: 6px;">S/ 15<span style="font-size: 11px; font-weight: 500; color: var(--gray-500);"> / día</span></div>
-          </div>
         </div>
-        <!-- Floating stat -->
-        <div class="absolute" style="top: 32px; right: -8px; background: white; border-radius: 16px; box-shadow: var(--shadow-lg); padding: 12px 16px; display: flex; align-items: center; gap: 12px; transform: rotate(3deg);">
+
+        <!-- Floating badge: speed -->
+        <div class="anim-float" style="position: absolute; top: 60px; right: 20px; background: white; color: var(--green-800); padding: 14px 18px; border-radius: 16px; box-shadow: var(--shadow-xl); display: flex; align-items: center; gap: 12px; transform: rotate(5deg);">
           <div style="width: 38px; height: 38px; border-radius: 12px; background: var(--green-100); display: flex; align-items: center; justify-content: center; color: var(--green-700); font-size: 16px;">
-            <i class="fa-solid fa-leaf"></i>
+            <i class="fa-solid fa-bolt"></i>
           </div>
           <div>
-            <div style="font-family: var(--font-display); font-weight: 800; font-size: 18px; color: var(--gray-900); line-height: 1;">128 kg CO₂</div>
-            <div style="font-family: var(--font-sans); font-size: 11px; color: var(--gray-500); margin-top: 2px;">{{ 'main.co2Label' | translate }}</div>
+            <div style="font-family: var(--font-display); font-weight: 800; font-size: 17px; color: var(--gray-900); line-height: 1;">2 min</div>
+            <div style="font-family: var(--font-sans); font-size: 11px; color: var(--gray-500); margin-top: 2px;">{{ 'main.publishLabel' | translate }}</div>
           </div>
         </div>
+
+        <!-- Floating badge: rating -->
+        <div class="anim-float" style="position: absolute; bottom: 80px; left: 10px; background: white; padding: 12px 16px; border-radius: 16px; box-shadow: var(--shadow-xl); display: flex; align-items: center; gap: 10px; transform: rotate(-6deg);">
+          <div style="display: flex; align-items: center; gap: 3px; color: var(--tier-gold);">
+            <i class="fa-solid fa-star" style="font-size: 11px;"></i>
+            <i class="fa-solid fa-star" style="font-size: 11px;"></i>
+            <i class="fa-solid fa-star" style="font-size: 11px;"></i>
+            <i class="fa-solid fa-star" style="font-size: 11px;"></i>
+            <i class="fa-solid fa-star" style="font-size: 11px;"></i>
+          </div>
+          <div>
+            <div style="font-family: var(--font-display); font-weight: 800; font-size: 14px; color: var(--gray-900); line-height: 1;">4.8/5</div>
+            <div style="font-family: var(--font-sans); font-size: 10px; color: var(--gray-500); margin-top: 1px;">{{ 'main.reviewsLabel' | translate }}</div>
+          </div>
+        </div>
+
       </div>
 
     </div>

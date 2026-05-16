@@ -85,7 +85,9 @@
     "stat1": "5,000+ usuarios",
     "stat2": "12 ciudades",
     "stat3": "24,000+ viajes",
-    "stat4": "4.8★ calificación"
+    "stat4": "4.8★ calificación",
+    "publishLabel": "publicar un vehículo",
+    "reviewsLabel": "1,234 reseñas"
   },
   "plans": {
     "eyebrow": "Planes y Precios",
