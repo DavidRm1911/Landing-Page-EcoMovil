@@ -1,31 +1,45 @@
 <section id="about-section" class="relative overflow-hidden" style="background: linear-gradient(180deg, var(--green-50) 0%, white 100%); padding: 96px 0;">
-  <div class="container mx-auto px-6 relative z-10">
-    <div class="text-center mb-14" style="max-width: 720px; margin-left: auto; margin-right: auto;">
-      <span class="eco-eyebrow mb-5 block">{{ 'about.eyebrow' | translate }}</span>
-      <h2 class="eco-h2 mb-4">{{ 'about.title' | translate }}</h2>
-    </div>
+  <div class="eco-blob" style="width: 380px; height: 380px; background: var(--emerald-100); right: -120px; bottom: -120px; opacity: 0.6;"></div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-      <!-- Story -->
-      <div class="eco-card p-10">
-        <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--green-100); color: var(--green-700); display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 20px;">
-          <i class="fa-solid fa-book-open"></i>
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: photo + floating badge -->
+      <div style="position: relative;">
+        <img src="./happypeoplebike.jpg" alt="Equipo EcoMovil"
+          style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-xl); aspect-ratio: 1/1; object-fit: cover;" />
+        <!-- Floating year badge -->
+        <div style="position: absolute; bottom: -24px; left: -24px; background: white; padding: 20px 24px; border-radius: 18px; box-shadow: var(--shadow-lg); max-width: 200px;">
+          <div style="font-family: var(--font-display); font-weight: 900; font-size: 36px; color: var(--green-700); line-height: 1; letter-spacing: -0.02em;">2025</div>
+          <div style="font-family: var(--font-sans); font-size: 13px; color: var(--gray-600); margin-top: 4px;">{{ 'about.foundedLabel' | translate }}</div>
         </div>
-        <h3 class="eco-h3 mb-4">{{ 'about.story' | translate }}</h3>
-        <p style="font-family: var(--font-sans); font-size: 16px; line-height: 1.7; color: var(--gray-600);">{{ 'about.showeare' | translate }}</p>
       </div>
-      <!-- Mission -->
-      <div class="eco-card p-10">
-        <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--emerald-100); color: var(--emerald-600); display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 20px;">
-          <i class="fa-solid fa-leaf"></i>
+
+      <!-- Right: copy -->
+      <div>
+        <span class="eco-eyebrow mb-5 block">{{ 'about.eyebrow' | translate }}</span>
+        <h2 class="eco-h2 mb-8">{{ 'about.headline' | translate }}</h2>
+
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--green-700); margin-bottom: 10px;">
+              {{ 'about.story' | translate }}
+            </h3>
+            <p style="font-family: var(--font-sans); font-size: 16px; line-height: 1.65; color: var(--gray-600);">
+              {{ 'about.showeare' | translate }}
+            </p>
+          </div>
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--green-700); margin-bottom: 10px;">
+              {{ 'about.ourmission' | translate }}
+            </h3>
+            <p style="font-family: var(--font-sans); font-size: 16px; line-height: 1.65; color: var(--gray-600);">
+              {{ 'about.whatareourmission' | translate }}
+            </p>
+          </div>
         </div>
-        <h3 class="eco-h3 mb-4">{{ 'about.ourmission' | translate }}</h3>
-        <p style="font-family: var(--font-sans); font-size: 16px; line-height: 1.7; color: var(--gray-600);">{{ 'about.whatareourmission' | translate }}</p>
       </div>
+
     </div>
   </div>
-
-  <!-- Decorative blobs -->
-  <div class="eco-blob" style="width: 300px; height: 300px; background: var(--green-100); top: 40%; right: -80px; opacity: 0.5;"></div>
-  <div class="eco-blob" style="width: 200px; height: 200px; background: var(--emerald-100); bottom: -60px; left: -60px; opacity: 0.6;"></div>
 </section>

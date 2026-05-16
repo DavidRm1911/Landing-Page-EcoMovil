@@ -9,14 +9,13 @@
   },
   "about": {
     "eyebrow": "Our Story",
+    "headline": "A simple idea, a growing community.",
+    "foundedLabel": "Founded by university students.",
     "title": "About Us",
     "story": "Our Story",
-    "showeare": "Ecomovil was born from a simple idea: make transportation more friendly with the environment, more affordable, and more sustainable. Founded by a group of students in 2025, we've grown from a small project into a thriving community-driven marketplace.",
+    "showeare": "EcoMovil was born from a simple idea: make transportation more eco-friendly, more affordable, and more sustainable. Founded by a group of university students in 2025, we've grown from a class project into a thriving community-driven marketplace.",
     "ourmission": "Our Mission",
-    "whatareourmission": "We're on a mission to revolutionize mobility by connecting people who want to buy, sell, or rent bikes, rollerskates, and skateboards. Whether you're a student, a professional, a tourist, or just someone looking for a greener way to get around — Ecomovil is for you. Together we're building a more sustainable future.",
-    "learn": "Learn more about us",
-    "ourteam": "Our Team",
-    "ourproduct": "Our Product"
+    "whatareourmission": "Revolutionize mobility by connecting people who want to buy, sell, or rent bikes, rollerskates, and skateboards. Students, professionals, tourists — together we're building a more sustainable future."
   },
   "footer": {
     "tagline": "Sustainable mobility for everyone. Buy, sell, or rent your eco-friendly vehicle today.",
@@ -40,23 +39,74 @@
     "title": "How it Works",
     "subtitle": "In four simple steps, we connect those who have vehicles with those who need them.",
     "steps": {
-      "listYourRide": {
-        "title": "List Your Ride",
-        "description": "Easily list your bike, rollerskates, or skateboards for sale or rent."
-      },
-      "connect": {
-        "title": "Explore Options",
-        "description": "Browse and filter available vehicles near you with clear pricing."
-      },
-      "handoff": {
-        "title": "Agree & Book",
-        "description": "Contact the owner, negotiate terms, and book securely in minutes."
-      },
-      "earnBadges": {
-        "title": "Build Reputation",
-        "description": "Complete transactions and earn badges that boost your visibility."
-      }
+      "listYourRide": { "title": "List Your Ride",   "description": "Easily list your bike, rollerskates, or skateboards for sale or rent." },
+      "connect":      { "title": "Explore Options",  "description": "Browse and filter available vehicles near you with clear pricing." },
+      "handoff":      { "title": "Agree & Book",     "description": "Contact the owner, negotiate terms, and book securely in minutes." },
+      "earnBadges":   { "title": "Build Reputation", "description": "Complete transactions and earn badges that boost your visibility." }
     }
+  },
+  "demo": {
+    "eyebrow": "Live Demo",
+    "title": "Touch, spin, explore.",
+    "subtitle": "This is what you'll see when you open the app. Drag the phone to rotate it in 3D — works in any direction.",
+    "dragHint": "Drag to rotate",
+    "reset": "Reset view",
+    "autoRotate": "Auto-rotate",
+    "tab1": "Home",
+    "tab2": "Search",
+    "tab3": "Post",
+    "tab4": "Saved",
+    "tab5": "Profile",
+    "f1title": "Post in 2 minutes",
+    "f1desc": "Photos, price, location. Done.",
+    "f2title": "Protected payments",
+    "f2desc": "Money only reaches the owner when the trip ends.",
+    "f3title": "Near you",
+    "f3desc": "Filters by zone and distance to find your match.",
+    "f4title": "In-app chat",
+    "f4desc": "Talk before confirming. Agree on details easily.",
+    "f5title": "Real ratings",
+    "f5desc": "Every trip adds reputation to your profile.",
+    "f6title": "CO₂ counter",
+    "f6desc": "See how much you save the planet each month."
+  },
+  "marketplace": {
+    "eyebrow": "Marketplace",
+    "title": "Find your next ride.",
+    "subtitle": "Hundreds of vehicles available to rent or buy — filtered by category, location, and price.",
+    "cta": "See all",
+    "catAll": "All",
+    "catBike": "Bikes",
+    "catSkates": "Skates",
+    "catBoard": "Skateboards",
+    "catEbike": "E-bikes"
+  },
+  "testimonials": {
+    "eyebrow": "Community",
+    "title": "Stories that roll.",
+    "subtitle": "Over 5,000 people use EcoMovil every month. Here's what some of them say.",
+    "q1": "I listed my mountain bike on a Sunday and by Friday I had already recovered the cost of the Silver plan. The best part is that the community is very respectful with the wheels.",
+    "r1": "Architecture student",
+    "q2": "I came for a month-long visit and rented skates the first week. Much cheaper than buying them and, honestly, more comfortable than the bus.",
+    "r2": "Designer, travels for work",
+    "q3": "I have four bikes for rent and EcoMovil organizes everything from one panel. Payments arrive on time and support responds quickly when there are issues.",
+    "r3": "Owner · Gold Plan"
+  },
+  "faq": {
+    "eyebrow": "Frequently Asked Questions",
+    "title": "Everything you need to know.",
+    "q1": "Do I need to own a bike to use EcoMovil?",
+    "a1": "No. You can use EcoMovil only as a renter and rent vehicles from other users without posting your own. Registration is free.",
+    "q2": "Who is responsible if the vehicle gets damaged during rental?",
+    "a2": "Each rental includes basic damage coverage. The deposit in the app guarantees the owner and the exact terms are agreed upon by both parties before delivery.",
+    "q3": "How does the owner get paid?",
+    "a3": "EcoMovil holds the payment until the rental is completed. Payments are transferred to your bank account on Fridays, in local currency, with no hidden fees.",
+    "q4": "Can I change my plan at any time?",
+    "a4": "Yes. You can upgrade or downgrade your plan from your dashboard and the change applies immediately. No minimum commitment.",
+    "q5": "Which cities does EcoMovil operate in?",
+    "a5": "We are currently active in 12 cities in Peru, Colombia, Ecuador and Chile. If your city is not on the list yet, you can register and we'll notify you when we arrive.",
+    "q6": "What if I have a problem with another user?",
+    "a6": "Our support team is available 24/7 (Silver and Gold plans) or by email (Bronze). We mediate any conflict and block users who don't respect the community."
   },
   "join": {
     "eyebrow": "Start Today",
@@ -95,38 +145,19 @@
     "chooseplan": "Choose Plan",
     "subtitle": "Start free and scale when you need it. No contracts, no surprises.",
     "bronze": {
-      "title": "Bronze",
-      "price": "Free",
-      "after": "then $1.99/month",
-      "desc": "Perfect for getting started and exploring the platform.",
-      "cta": "Start for free",
-      "features": {
-        "publications": "2 publications per month",
-        "assistance": "Basic assistance"
-      }
+      "title": "Bronze", "price": "Free", "after": "then $1.99/month",
+      "desc": "Perfect for getting started and exploring the platform.", "cta": "Start for free",
+      "features": { "publications": "2 publications per month", "assistance": "Basic assistance" }
     },
     "silver": {
-      "title": "Silver",
-      "price": "$5.99",
-      "after": "/ month",
-      "desc": "For regular publishers who want more visibility.",
-      "cta": "Choose Silver",
-      "features": {
-        "publications": "10 publications per month",
-        "assistance": "Priority assistance",
-        "featuredPublications": "Featured publications"
-      }
+      "title": "Silver", "price": "$5.99", "after": "/ month",
+      "desc": "For regular publishers who want more visibility.", "cta": "Choose Silver",
+      "features": { "publications": "10 publications per month", "assistance": "Priority assistance", "featuredPublications": "Featured publications" }
     },
     "gold": {
-      "title": "Gold",
-      "price": "$19.99",
-      "after": "/ month",
-      "desc": "For businesses and sellers with high publication volume.",
-      "cta": "Choose Gold",
-      "features": {
-        "publications": "Unlimited publications",
-        "assistance": "24/7 assistance"
-      }
+      "title": "Gold", "price": "$19.99", "after": "/ month",
+      "desc": "For businesses and sellers with high publication volume.", "cta": "Choose Gold",
+      "features": { "publications": "Unlimited publications", "assistance": "24/7 assistance" }
     }
   },
   "whocanuse": {

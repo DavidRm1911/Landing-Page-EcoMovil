@@ -9,14 +9,13 @@
   },
   "about": {
     "eyebrow": "Nuestra Historia",
+    "headline": "Una idea simple, una comunidad que crece.",
+    "foundedLabel": "Fundado por estudiantes universitarios.",
     "title": "Acerca de nosotros",
     "story": "Nuestra historia",
-    "showeare": "Ecomovil ha nacido de una idea simple: hacer el transporte más amigable con el medio ambiente, más asequible y más sostenible. Fundada por un grupo de estudiantes en 2025, hemos pasado de un pequeño proyecto a un próspero mercado impulsado por la comunidad.",
+    "showeare": "EcoMovil nació de una idea simple: hacer el transporte más amigable con el medio ambiente, más asequible y más sostenible. Fundada por un grupo de estudiantes universitarios en 2025, hemos pasado de un proyecto de clase a un mercado próspero impulsado por la comunidad.",
     "ourmission": "Nuestra misión",
-    "whatareourmission": "Estamos en la misión de revolucionar la movilidad conectando a personas que quieren comprar, vender o alquilar bicicletas, patines y patinetas. Ya seas estudiante, profesional, turista o simplemente alguien que quiere moverse de forma diferente, Ecomovil es para ti. Juntos estamos creando un futuro más sostenible.",
-    "learn": "Aprende más acerca de nosotros",
-    "ourteam": "Nuestro equipo",
-    "ourproduct": "Nuestro producto"
+    "whatareourmission": "Revolucionar la movilidad conectando a personas que quieren comprar, vender o alquilar bicicletas, patines y patinetas. Estudiantes, profesionales, turistas — juntos estamos creando un futuro más sostenible."
   },
   "footer": {
     "tagline": "Movilidad sostenible para todos. Compra, vende o alquila tu vehículo ecológico hoy.",
@@ -40,23 +39,74 @@
     "title": "Cómo funciona",
     "subtitle": "En cuatro pasos simples, conectamos a quienes tienen vehículos con quienes los necesitan.",
     "steps": {
-      "listYourRide": {
-        "title": "Publica tu vehículo",
-        "description": "Lista fácilmente tu bicicleta, patines o monopatines para la venta o alquiler."
-      },
-      "connect": {
-        "title": "Explora opciones",
-        "description": "Busca y filtra vehículos disponibles cerca de ti con precios claros."
-      },
-      "handoff": {
-        "title": "Acuerda y reserva",
-        "description": "Contacta al propietario, negocia los términos y reserva de forma segura."
-      },
-      "earnBadges": {
-        "title": "Gana reputación",
-        "description": "Completa transacciones y acumula insignias que aumentan tu visibilidad."
-      }
+      "listYourRide": { "title": "Publica tu vehículo", "description": "Lista fácilmente tu bicicleta, patines o monopatines para la venta o alquiler." },
+      "connect":      { "title": "Explora opciones",    "description": "Busca y filtra vehículos disponibles cerca de ti con precios claros." },
+      "handoff":      { "title": "Acuerda y reserva",   "description": "Contacta al propietario, negocia los términos y reserva de forma segura." },
+      "earnBadges":   { "title": "Gana reputación",     "description": "Completa transacciones y acumula insignias que aumentan tu visibilidad." }
     }
+  },
+  "demo": {
+    "eyebrow": "Demo en Vivo",
+    "title": "Toca, gira, explora.",
+    "subtitle": "Esto es lo que verás al abrir la app. Arrastra el teléfono para girarlo en 3D — funciona en cualquier dirección.",
+    "dragHint": "Arrastra para girar",
+    "reset": "Vista inicial",
+    "autoRotate": "Auto-girar",
+    "tab1": "Inicio",
+    "tab2": "Buscar",
+    "tab3": "Publicar",
+    "tab4": "Guardado",
+    "tab5": "Perfil",
+    "f1title": "Publica en 2 minutos",
+    "f1desc": "Fotos, precio, ubicación. Listo.",
+    "f2title": "Pago protegido",
+    "f2desc": "El dinero solo llega al propietario cuando el viaje termina.",
+    "f3title": "Cerca de ti",
+    "f3desc": "Filtros por zona y distancia para encontrar tu match.",
+    "f4title": "Chat dentro de la app",
+    "f4desc": "Conversa antes de confirmar. Acuerda detalles fácil.",
+    "f5title": "Ratings reales",
+    "f5desc": "Cada viaje suma reputación a tu perfil.",
+    "f6title": "CO₂ contador",
+    "f6desc": "Mira cuánto ahorras al planeta cada mes."
+  },
+  "marketplace": {
+    "eyebrow": "Marketplace",
+    "title": "Encuentra tu próxima rueda.",
+    "subtitle": "Cientos de vehículos disponibles para alquilar o comprar — filtrados por categoría, ubicación y precio.",
+    "cta": "Ver todos",
+    "catAll": "Todos",
+    "catBike": "Bicicletas",
+    "catSkates": "Patines",
+    "catBoard": "Patinetas",
+    "catEbike": "E-bikes"
+  },
+  "testimonials": {
+    "eyebrow": "Comunidad",
+    "title": "Historias que ruedan.",
+    "subtitle": "Más de 5,000 personas usan EcoMovil cada mes. Esto dicen algunos.",
+    "q1": "Publiqué mi bici de montaña un domingo y para el viernes ya había recuperado el plan Plata. Lo mejor es que la comunidad es muy respetuosa con las ruedas.",
+    "r1": "Estudiante de arquitectura",
+    "q2": "Vine de visita por un mes y alquilé patines la primera semana. Mucho más barato que comprarlos y, sinceramente, más cómodo que el bus.",
+    "r2": "Diseñador, viaja por trabajo",
+    "q3": "Tengo cuatro bicis en alquiler y EcoMovil me organiza todo desde un solo panel. Los cobros llegan puntuales y el soporte responde rápido cuando hay líos.",
+    "r3": "Propietaria · Plan Oro"
+  },
+  "faq": {
+    "eyebrow": "Preguntas Frecuentes",
+    "title": "Todo lo que necesitas saber.",
+    "q1": "¿Necesito una bicicleta propia para usar EcoMovil?",
+    "a1": "No. Puedes usar EcoMovil sólo como arrendatario y alquilar vehículos de otros usuarios sin publicar el tuyo. El registro es gratuito.",
+    "q2": "¿Quién es responsable si el vehículo se daña durante el alquiler?",
+    "a2": "Cada alquiler incluye una cobertura básica contra daños. El depósito en la app garantiza al propietario y los términos exactos los acuerdan ambas partes antes de la entrega.",
+    "q3": "¿Cómo se paga al propietario?",
+    "a3": "EcoMovil retiene el pago hasta que el alquiler se completa. Los cobros se transfieren a tu cuenta bancaria los viernes, en moneda local, sin comisiones escondidas.",
+    "q4": "¿Puedo cambiar de plan en cualquier momento?",
+    "a4": "Sí. Puedes subir o bajar de plan desde tu panel y el cambio aplica inmediatamente. No hay permanencia mínima.",
+    "q5": "¿En qué ciudades opera EcoMovil?",
+    "a5": "Actualmente estamos activos en 12 ciudades de Perú, Colombia, Ecuador y Chile. Si tu ciudad aún no está en la lista, puedes registrarte y te avisaremos cuando lleguemos.",
+    "q6": "¿Qué pasa si tengo un problema con otro usuario?",
+    "a6": "Nuestro equipo de soporte está disponible 24/7 (planes Plata y Oro) o por email (Bronce). Mediamos cualquier conflicto y bloqueamos a usuarios que no respeten la comunidad."
   },
   "join": {
     "eyebrow": "Empieza Hoy",
@@ -95,38 +145,19 @@
     "chooseplan": "Elige Plan",
     "subtitle": "Empieza gratis y escala cuando lo necesites. Sin contratos, sin sorpresas.",
     "bronze": {
-      "title": "Bronce",
-      "price": "Gratis",
-      "after": "luego $1.99/mes",
-      "desc": "Ideal para comenzar a publicar y explorar la plataforma.",
-      "cta": "Empezar gratis",
-      "features": {
-        "publications": "2 publicaciones por mes",
-        "assistance": "Asistencia básica"
-      }
+      "title": "Bronce", "price": "Gratis", "after": "luego $1.99/mes",
+      "desc": "Ideal para comenzar a publicar y explorar la plataforma.", "cta": "Empezar gratis",
+      "features": { "publications": "2 publicaciones por mes", "assistance": "Asistencia básica" }
     },
     "silver": {
-      "title": "Plata",
-      "price": "$5.99",
-      "after": "/ mes",
-      "desc": "Para quienes publican regularmente y quieren más visibilidad.",
-      "cta": "Elegir Plata",
-      "features": {
-        "publications": "10 publicaciones por mes",
-        "assistance": "Asistencia prioritaria",
-        "featuredPublications": "Publicaciones destacadas"
-      }
+      "title": "Plata", "price": "$5.99", "after": "/ mes",
+      "desc": "Para quienes publican regularmente y quieren más visibilidad.", "cta": "Elegir Plata",
+      "features": { "publications": "10 publicaciones por mes", "assistance": "Asistencia prioritaria", "featuredPublications": "Publicaciones destacadas" }
     },
     "gold": {
-      "title": "Oro",
-      "price": "$19.99",
-      "after": "/ mes",
-      "desc": "Para negocios y vendedores con alto volumen de publicaciones.",
-      "cta": "Elegir Oro",
-      "features": {
-        "publications": "Publicaciones ilimitadas",
-        "assistance": "Asistencia 24/7"
-      }
+      "title": "Oro", "price": "$19.99", "after": "/ mes",
+      "desc": "Para negocios y vendedores con alto volumen de publicaciones.", "cta": "Elegir Oro",
+      "features": { "publications": "Publicaciones ilimitadas", "assistance": "Asistencia 24/7" }
     }
   },
   "whocanuse": {

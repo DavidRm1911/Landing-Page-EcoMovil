@@ -1,0 +1,158 @@
+<section id="demo-section" class="relative overflow-hidden" style="background: linear-gradient(180deg, white 0%, var(--green-50) 50%, white 100%); padding: 96px 0;">
+  <div class="eco-blob" style="width: 420px; height: 420px; background: var(--emerald-100); left: -140px; top: 100px; opacity: 0.5;"></div>
+  <div class="eco-blob" style="width: 360px; height: 360px; background: var(--green-200); right: -120px; bottom: -100px; opacity: 0.4;"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Header -->
+    <div class="text-center mb-12" style="max-width: 720px; margin-left: auto; margin-right: auto;">
+      <span class="eco-eyebrow mb-5 block">{{ 'demo.eyebrow' | translate }}</span>
+      <h2 class="eco-h2 mb-4">{{ 'demo.title' | translate }}</h2>
+      <p class="eco-lead mx-auto">{{ 'demo.subtitle' | translate }}</p>
+    </div>
+
+    <!-- 3-column layout -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+
+      <!-- Left feature callouts -->
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <div *ngFor="let f of leftFeatures" style="display: flex; gap: 14px; align-items: flex-start; text-align: right; flex-direction: row-reverse;">
+          <div style="width: 44px; height: 44px; border-radius: 14px; flex-shrink: 0; background: white; border: 1.5px solid var(--green-200); display: flex; align-items: center; justify-content: center; color: var(--green-700); font-size: 16px; box-shadow: 0 4px 12px -4px rgba(22,163,74,0.25);">
+            <i [class]="'fa-solid ' + f.icon"></i>
+          </div>
+          <div>
+            <div style="font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--green-800); margin-bottom: 4px;">{{ f.title | translate }}</div>
+            <div style="font-family: var(--font-sans); font-size: 13.5px; line-height: 1.5; color: var(--gray-600);">{{ f.desc | translate }}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center: 3D phone -->
+      <div style="display: flex; justify-content: center; align-items: center; perspective: 1600px; perspective-origin: 50% 50%; height: 640px; user-select: none;">
+        <div
+          (mousedown)="onPhoneMouseDown($event)"
+          (touchstart)="onPhoneTouchStart($event)"
+          style="position: relative; width: 320px; height: 640px; transform-style: preserve-3d; filter: drop-shadow(0 50px 60px rgba(20,83,45,0.35));"
+          [style.transform]="phoneTransform"
+          [style.cursor]="dragging ? 'grabbing' : 'grab'"
+          [style.transition]="dragging ? 'none' : 'transform 0.05s linear'">
+
+          <!-- Front face -->
+          <div style="position: absolute; inset: 0; transform: translateZ(14px); background: var(--gray-900); border-radius: 48px; padding: 8px; box-sizing: border-box; backface-visibility: hidden;">
+            <div style="width: 100%; height: 100%; background: white; border-radius: 40px; overflow: hidden; position: relative;">
+              <!-- Dynamic Island notch -->
+              <div style="position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 100px; height: 28px; background: var(--gray-900); border-radius: 999px; z-index: 2;"></div>
+              <!-- Status bar -->
+              <div style="position: absolute; top: 14px; left: 28px; right: 28px; z-index: 3; display: flex; justify-content: space-between; font-family: var(--font-sans); font-size: 11px; font-weight: 700; color: var(--gray-900);">
+                <span>9:41</span>
+                <div style="display: flex; gap: 4px; align-items: center; font-size: 9px;">
+                  <i class="fa-solid fa-signal"></i>
+                  <i class="fa-solid fa-wifi"></i>
+                  <i class="fa-solid fa-battery-full"></i>
+                </div>
+              </div>
+              <!-- App content -->
+              <div style="padding: 52px 18px 18px; height: 100%; background: var(--green-50); box-sizing: border-box; overflow: hidden;">
+                <!-- Header row -->
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+                  <div style="flex: 1; font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--green-800); letter-spacing: -0.02em; line-height: 1.1;">
+                    Hola, Ana<br>
+                    <span style="font-family: var(--font-sans); font-size: 11px; font-weight: 500; color: var(--gray-500);">¿Qué rueda buscas hoy?</span>
+                  </div>
+                  <div style="width: 36px; height: 36px; border-radius: 999px; background: var(--green-200); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; color: var(--green-900); font-size: 13px;">AR</div>
+                </div>
+                <!-- Search bar -->
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 14px; background: white; padding: 12px 14px; border-radius: 14px; box-shadow: var(--shadow-sm);">
+                  <i class="fa-solid fa-magnifying-glass" style="color: var(--gray-400); font-size: 12px;"></i>
+                  <span style="font-family: var(--font-sans); font-size: 12px; color: var(--gray-500);">Buscar cerca de ti…</span>
+                  <div style="margin-left: auto; width: 24px; height: 24px; border-radius: 8px; background: var(--green-100); color: var(--green-700); display: flex; align-items: center; justify-content: center; font-size: 10px;">
+                    <i class="fa-solid fa-sliders"></i>
+                  </div>
+                </div>
+                <!-- Filter chips -->
+                <div style="display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap;">
+                  <span style="padding: 6px 12px; border-radius: 999px; background: var(--green-600); color: white; font-family: var(--font-sans); font-size: 10.5px; font-weight: 600;">Todos</span>
+                  <span style="padding: 6px 12px; border-radius: 999px; background: white; color: var(--gray-700); font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; box-shadow: var(--shadow-sm);">Bicis</span>
+                  <span style="padding: 6px 12px; border-radius: 999px; background: white; color: var(--gray-700); font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; box-shadow: var(--shadow-sm);">Patines</span>
+                  <span style="padding: 6px 12px; border-radius: 999px; background: white; color: var(--gray-700); font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; box-shadow: var(--shadow-sm);">E-bikes</span>
+                </div>
+                <!-- Section label -->
+                <div style="font-family: var(--font-sans); font-size: 11px; font-weight: 700; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px;">Cerca de ti</div>
+                <!-- Mini listing cards -->
+                <div *ngFor="let c of miniCards" style="background: white; border-radius: 14px; padding: 10px; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; box-shadow: var(--shadow-sm);">
+                  <div style="width: 52px; height: 52px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" [style.background]="c.bg">
+                    <i [class]="'fa-solid ' + c.icon" style="color: var(--green-700); font-size: 20px;"></i>
+                  </div>
+                  <div style="flex: 1; min-width: 0;">
+                    <div style="font-family: var(--font-display); font-size: 12px; font-weight: 700; color: var(--gray-900);">{{ c.title }}</div>
+                    <div style="font-family: var(--font-sans); font-size: 9.5px; color: var(--gray-500); margin-top: 2px;">{{ c.loc }} · <i class="fa-solid fa-star" style="color: var(--tier-gold); font-size: 8px;"></i> {{ c.rate }}</div>
+                  </div>
+                  <div style="font-family: var(--font-display); font-weight: 800; font-size: 13px; color: var(--green-700);">{{ c.price }}</div>
+                </div>
+              </div>
+              <!-- Tab bar -->
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; background: white; padding: 12px 20px 18px; display: flex; justify-content: space-around; border-top: 1px solid var(--gray-100);">
+                <div *ngFor="let t of tabIcons" style="text-align: center;" [style.color]="t.active ? 'var(--green-600)' : 'var(--gray-400)'">
+                  <i [class]="'fa-solid ' + t.icon" style="font-size: 16px;"></i>
+                  <div style="font-family: var(--font-sans); font-size: 9px; font-weight: 600; margin-top: 4px;">{{ t.label | translate }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Back face -->
+          <div style="position: absolute; inset: 0; transform: translateZ(-14px) rotateY(180deg); background: linear-gradient(135deg, var(--green-600), var(--emerald-700)); border-radius: 48px; backface-visibility: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: white;">
+            <div style="position: absolute; top: 28px; left: 28px; width: 96px; height: 96px; border-radius: 26px; background: rgba(0,0,0,0.25); display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 12px; box-sizing: border-box;">
+              <div style="background: rgba(0,0,0,0.6); border-radius: 999px; border: 2px solid rgba(255,255,255,0.15);"></div>
+              <div style="background: rgba(0,0,0,0.6); border-radius: 999px; border: 2px solid rgba(255,255,255,0.15);"></div>
+              <div style="background: rgba(0,0,0,0.6); border-radius: 999px; border: 2px solid rgba(255,255,255,0.15);"></div>
+              <div style="background: var(--tier-gold); border-radius: 999px; opacity: 0.85;"></div>
+            </div>
+            <div style="width: 80px; height: 80px; border-radius: 22px; background: var(--green-700); display: flex; align-items: center; justify-content: center; font-size: 36px; color: white; box-shadow: 0 8px 24px rgba(0,0,0,0.25);">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div style="font-family: var(--font-display); font-weight: 900; font-size: 26px; letter-spacing: -0.02em;">EcoMovil</div>
+            <div style="font-family: var(--font-sans); font-size: 12px; opacity: 0.75; text-transform: uppercase; letter-spacing: 0.15em;">Pedalea · Rueda · Conecta</div>
+          </div>
+
+          <!-- Right edge -->
+          <div style="position: absolute; top: 0; width: 28px; height: 640px; background: linear-gradient(to bottom, #1a1d22, #0f1115); transform-origin: right center; transform: translateX(-14px) rotateY(90deg);" [style.left]="'306px'"></div>
+          <!-- Left edge -->
+          <div style="position: absolute; top: 0; width: 28px; height: 640px; background: linear-gradient(to bottom, #1a1d22, #0f1115); transform-origin: left center; transform: translateX(14px) rotateY(-90deg);" [style.left]="'-14px'"></div>
+          <!-- Top edge -->
+          <div style="position: absolute; left: 0; width: 320px; height: 28px; background: linear-gradient(to bottom, #1a1d22, #0f1115); transform-origin: center top; transform: translateY(14px) rotateX(90deg);" [style.top]="'-14px'"></div>
+          <!-- Bottom edge -->
+          <div style="position: absolute; left: 0; width: 320px; height: 28px; background: linear-gradient(to bottom, #1a1d22, #0f1115); transform-origin: center bottom; transform: translateY(-14px) rotateX(-90deg);" [style.top]="'626px'"></div>
+
+        </div>
+      </div>
+
+      <!-- Right feature callouts -->
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <div *ngFor="let f of rightFeatures" style="display: flex; gap: 14px; align-items: flex-start;">
+          <div style="width: 44px; height: 44px; border-radius: 14px; flex-shrink: 0; background: white; border: 1.5px solid var(--green-200); display: flex; align-items: center; justify-content: center; color: var(--green-700); font-size: 16px; box-shadow: 0 4px 12px -4px rgba(22,163,74,0.25);">
+            <i [class]="'fa-solid ' + f.icon"></i>
+          </div>
+          <div>
+            <div style="font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--green-800); margin-bottom: 4px;">{{ f.title | translate }}</div>
+            <div style="font-family: var(--font-sans); font-size: 13.5px; line-height: 1.5; color: var(--gray-600);">{{ f.desc | translate }}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls strip -->
+    <div style="display: flex; justify-content: center; align-items: center; gap: 18px; margin-top: 40px; flex-wrap: wrap;">
+      <div style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; border-radius: 999px; background: white; border: 1px solid var(--gray-200); font-family: var(--font-sans); font-size: 13px; font-weight: 600; color: var(--gray-600); box-shadow: var(--shadow-sm);">
+        <i class="fa-solid fa-hand-pointer" style="color: var(--green-600);"></i>
+        {{ 'demo.dragHint' | translate }}
+      </div>
+      <button (click)="reset()" class="eco-btn-outline" style="padding: 10px 18px; font-size: 13px;">
+        <i class="fa-solid fa-rotate-left" style="font-size: 11px;"></i> {{ 'demo.reset' | translate }}
+      </button>
+      <button (click)="toggleAuto()" class="eco-btn-outline" style="padding: 10px 14px; font-size: 13px;">
+        <i class="fa-solid fa-arrows-rotate" style="font-size: 11px;"></i> {{ 'demo.autoRotate' | translate }}
+      </button>
+    </div>
+  </div>
+</section>

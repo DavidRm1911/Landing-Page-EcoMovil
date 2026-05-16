@@ -1,0 +1,70 @@
+<section id="marketplace-section" class="relative overflow-hidden" style="background: linear-gradient(180deg, var(--green-50) 0%, white 100%); padding: 96px 0;">
+  <div class="eco-blob" style="width: 320px; height: 320px; background: var(--emerald-100); right: -120px; top: 80px; opacity: 0.6;"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Header row -->
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 36px; flex-wrap: wrap;">
+      <div style="max-width: 600px;">
+        <span class="eco-eyebrow mb-4 block">{{ 'marketplace.eyebrow' | translate }}</span>
+        <h2 class="eco-h2 mb-3">{{ 'marketplace.title' | translate }}</h2>
+        <p class="eco-lead">{{ 'marketplace.subtitle' | translate }}</p>
+      </div>
+      <button (click)="onCta()" class="eco-btn-outline">
+        {{ 'marketplace.cta' | translate }} <i class="fa-solid fa-arrow-right" style="font-size: 11px;"></i>
+      </button>
+    </div>
+
+    <!-- Category chips -->
+    <div style="display: flex; gap: 10px; margin-bottom: 28px; flex-wrap: wrap;">
+      <button *ngFor="let c of categories"
+        (click)="activeCategory = c.key"
+        [style.background]="activeCategory === c.key ? 'var(--green-600)' : 'white'"
+        [style.color]="activeCategory === c.key ? 'white' : 'var(--gray-700)'"
+        [style.borderColor]="activeCategory === c.key ? 'var(--green-600)' : 'var(--gray-200)'"
+        [style.boxShadow]="activeCategory === c.key ? '0 4px 12px -4px rgba(22,163,74,0.4)' : 'none'"
+        style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px; font-family: var(--font-sans); font-size: 14px; font-weight: 600; border: 1.5px solid; cursor: pointer; transition: all 200ms var(--ease-out);">
+        <i [class]="'fa-solid ' + c.icon" style="font-size: 12px;"></i>
+        {{ c.label | translate }}
+      </button>
+    </div>
+
+    <!-- Listings grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+      <div *ngFor="let l of filtered; let i = index"
+        style="background: white; border-radius: 18px; border: 1px solid var(--gray-200); overflow: hidden; box-shadow: var(--shadow-sm); transition: all 250ms var(--ease-out); cursor: pointer;"
+        (mouseenter)="$event.currentTarget.style.cssText = $event.currentTarget.style.cssText + ';transform:translateY(-4px);box-shadow:0 20px 40px -12px rgba(0,0,0,0.15)'"
+        (mouseleave)="$event.currentTarget.style.transform='translateY(0)'; $event.currentTarget.style.boxShadow='var(--shadow-sm)'">
+
+        <!-- Image / icon area -->
+        <div style="aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; position: relative;" [style.background]="l.bg">
+          <!-- Tag -->
+          <span style="position: absolute; top: 10px; left: 10px; background: white; font-family: var(--font-sans); font-size: 10px; font-weight: 800; padding: 4px 9px; border-radius: 999px; letter-spacing: 0.04em; box-shadow: var(--shadow-sm);"
+            [style.color]="l.tag === 'EN VENTA' ? 'var(--emerald-700)' : 'var(--green-700)'">{{ l.tag }}</span>
+          <!-- Fav button -->
+          <button (click)="toggleFav(i); $event.stopPropagation()"
+            style="position: absolute; top: 10px; right: 10px; width: 30px; height: 30px; border-radius: 999px; background: white; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); font-size: 13px; border: none; cursor: pointer;"
+            [style.color]="isFav(i) ? 'var(--green-600)' : 'var(--gray-400)'">
+            <i [class]="(isFav(i) ? 'fa-solid' : 'fa-regular') + ' fa-heart'"></i>
+          </button>
+          <i [class]="'fa-solid ' + l.icon" style="font-size: 52px; color: var(--green-700); opacity: 0.5;"></i>
+        </div>
+
+        <!-- Info -->
+        <div style="padding: 14px;">
+          <div style="font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--gray-900); margin-bottom: 4px;">{{ l.title }}</div>
+          <div style="display: flex; align-items: center; gap: 5px; font-family: var(--font-sans); font-size: 12px; color: var(--gray-500);">
+            <i class="fa-solid fa-location-dot" style="font-size: 10px;"></i>
+            <span>{{ l.loc }}</span>
+            <span style="color: var(--gray-300);">·</span>
+            <i class="fa-solid fa-star" style="color: var(--tier-gold); font-size: 10px;"></i>
+            <span><strong style="color: var(--gray-700);">{{ l.rate }}</strong> ({{ l.n }})</span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: 6px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--gray-100);">
+            <span style="font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--green-700);">{{ l.price }}</span>
+            <span style="font-family: var(--font-sans); font-size: 12px; color: var(--gray-500);">{{ l.unit }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
