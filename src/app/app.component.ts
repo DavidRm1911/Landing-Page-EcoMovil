@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { ProductDemoComponent } from './product-demo/product-demo.component';
@@ -19,7 +19,6 @@ import { TranslateService } from '@ngx-translate/core';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     HeaderComponent,
     MainComponent,
     ProductDemoComponent,
