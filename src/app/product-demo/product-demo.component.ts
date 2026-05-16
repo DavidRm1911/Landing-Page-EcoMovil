@@ -12,7 +12,7 @@ export class ProductDemoComponent implements OnInit, OnDestroy {
   rotX = -8;
   rotY = -18;
 
-  private dragging = false;
+  dragging = false;
   private lastX = 0;
   private lastY = 0;
   private autoOn = true;

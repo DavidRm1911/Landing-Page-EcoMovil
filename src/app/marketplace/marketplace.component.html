@@ -32,8 +32,8 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
       <div *ngFor="let l of filtered; let i = index"
         style="background: white; border-radius: 18px; border: 1px solid var(--gray-200); overflow: hidden; box-shadow: var(--shadow-sm); transition: all 250ms var(--ease-out); cursor: pointer;"
-        (mouseenter)="$event.currentTarget.style.cssText = $event.currentTarget.style.cssText + ';transform:translateY(-4px);box-shadow:0 20px 40px -12px rgba(0,0,0,0.15)'"
-        (mouseleave)="$event.currentTarget.style.transform='translateY(0)'; $event.currentTarget.style.boxShadow='var(--shadow-sm)'">
+        (mouseenter)="$any($event.currentTarget).style.transform='translateY(-4px)'; $any($event.currentTarget).style.boxShadow='0 20px 40px -12px rgba(0,0,0,0.15)'"
+        (mouseleave)="$any($event.currentTarget).style.transform='translateY(0)'; $any($event.currentTarget).style.boxShadow='var(--shadow-sm)'">
 
         <!-- Image / icon area -->
         <div style="aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; position: relative;" [style.background]="l.bg">

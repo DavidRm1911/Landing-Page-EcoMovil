@@ -11,8 +11,8 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <div *ngFor="let q of quotes; let i = index"
         style="background: white; border: 1px solid var(--gray-200); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px; box-shadow: var(--shadow-sm); transition: all 250ms var(--ease-out);"
-        (mouseenter)="$event.currentTarget.style.boxShadow='0 20px 40px -12px rgba(0,0,0,0.12)'; $event.currentTarget.style.transform='translateY(-2px)'"
-        (mouseleave)="$event.currentTarget.style.boxShadow='var(--shadow-sm)'; $event.currentTarget.style.transform='translateY(0)'">
+        (mouseenter)="$any($event.currentTarget).style.boxShadow='0 20px 40px -12px rgba(0,0,0,0.12)'; $any($event.currentTarget).style.transform='translateY(-2px)'"
+        (mouseleave)="$any($event.currentTarget).style.boxShadow='var(--shadow-sm)'; $any($event.currentTarget).style.transform='translateY(0)'">
 
         <!-- Stars -->
         <div style="display: flex; align-items: center; gap: 4px; color: var(--tier-gold);">
