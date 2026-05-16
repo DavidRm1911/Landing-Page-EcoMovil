@@ -18,13 +18,6 @@ export class MainComponent {
     { letter: 'L', color: 'var(--emerald-200)' },
   ];
 
-  stats = [
-    { value: '5,000+', label: 'main.stat1' },
-    { value: '12',     label: 'main.stat2' },
-    { value: '24,000+',label: 'main.stat3' },
-    { value: '4.8★',   label: 'main.stat4' },
-  ];
-
   redirectToExternalPage() {
     window.location.href = 'https://main.d6rnq0h4jt472.amplifyapp.com/login';
   }

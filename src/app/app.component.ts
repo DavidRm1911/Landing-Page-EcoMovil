@@ -3,6 +3,7 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { ProductDemoComponent } from './product-demo/product-demo.component';
+import { StatsComponent } from './stats/stats.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { WhocanuseComponent } from './whocanuse/whocanuse.component';
@@ -22,6 +23,7 @@ import { TranslateService } from '@ngx-translate/core';
     HeaderComponent,
     MainComponent,
     ProductDemoComponent,
+    StatsComponent,
     HowItWorksComponent,
     MarketplaceComponent,
     WhocanuseComponent,
